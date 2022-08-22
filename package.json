@@ -59,7 +59,8 @@
                   }
                 }
               ]
-            }
+            },
+            "devContentSecurityPolicy": "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://source.unsplash.com/random"
           }
         ]
       ]
@@ -86,6 +87,7 @@
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.1",
+    "better-sqlite3": "^7.0.1",
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

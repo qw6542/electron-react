@@ -3,7 +3,11 @@ import { Box, Container, Stack, Typography, Grid, Button, Card, CardActions, Car
 
 export default function Main() {
     const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
+    const clickHandler = ()=>{
+      const res =  window.Api.query('DB');
+      console.dir(res);
+}
+    }
     return (
         <main>
             {/* Hero unit */}
@@ -67,7 +71,7 @@ export default function Main() {
                     </Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button size="small">View</Button>
+                                    <Button size="small" onClick={clickHandler}>View</Button>
                                     <Button size="small">Edit</Button>
                                 </CardActions>
                             </Card>
